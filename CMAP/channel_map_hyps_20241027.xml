@@ -147,7 +147,8 @@
 	<FE ch="49 + ch*2" data="data"><D Device="SDC1" plane="4" ch="23 - ch" data="data"/></FE>
       </for></for>
       <for var="data" from="0" to="3">
-	<FE ch="0" data="data + 3"><D Device="HUL-RM" plane="hul03sdc_1" ch="0" data="data"/></FE>
+	<!-- <FE ch="0" data="data + 3"><D Device="HUL-RM" plane="hul01sdc_1" ch="0" data="data"/></FE> -->
+	<FE ch="0" data="data + 3"><D Device="HUL-RM" plane="3" ch="0" data="data"/></FE>
       </for>
       <for var="ch" from="0" to="7"><for var="data" from="0" to="2">
 	<FE ch="96 + ch*2" data="data"><D Device="SDC1" plane="5" ch="15 - ch" data="data"/></FE>

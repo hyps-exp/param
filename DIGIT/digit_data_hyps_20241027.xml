@@ -446,6 +446,14 @@
 	<data id="3" name="lock"/>
       </ch>
     </plane>
+    <plane id="3" name="hul01sdc_1">
+      <ch id="0">
+	<data id="0" name="event"/>
+	<data id="1" name="spill"/>
+	<data id="2" name="sinc"/>
+	<data id="3" name="lock"/>
+      </ch>
+    </plane>
   </device>
 
   <!--________________________________________________________________-->
