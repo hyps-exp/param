@@ -64,7 +64,7 @@
 
   <!--________________________________________________________________-->
   <device id="3" name="TAG-PL" type="Hodo">
-    <plane id="0" name="X"><for var="seg" from="0" to="54">
+    <plane id="0" name="X"><for var="seg" from="0" to="4">
       <ch id="seg">
         <data id="0" name="adc"/>
         <data id="1" name="tdc"/>
@@ -73,7 +73,7 @@
         <data id="4" name="overflow"/>
       </ch></for>
     </plane>
-    <plane id="1" name="XP"><for var="seg" from="0" to="54">
+    <plane id="1" name="XP"><for var="seg" from="0" to="4">
       <ch id="seg">
         <data id="0" name="adc"/>
         <data id="1" name="tdc"/>
