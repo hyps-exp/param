@@ -37,48 +37,48 @@
     <!--________________________________________________________________-->
     <HulMHTdc node_id="2011" name="hul03sdc-0">
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="ch" data="data"><D Device="SDC0" plane="0" ch="96 + ch" data="data"/></FE>
+	<FE ch="ch" data="data"><D Device="SDC0" plane="0" ch="111 - ch" data="data"/></FE>
       </for></for>
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="16 + ch" data="data"><D Device="SDC0" plane="2" ch="96 + ch" data="data"/></FE>
+	<FE ch="16 + ch" data="data"><D Device="SDC0" plane="2" ch="111 - ch" data="data"/></FE>
       </for></for>
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="32 + ch" data="data"><D Device="SDC0" plane="0" ch="80 + ch" data="data"/></FE>
+	<FE ch="32 + ch" data="data"><D Device="SDC0" plane="0" ch="95 - ch" data="data"/></FE>
       </for></for>
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="48 + ch" data="data"><D Device="SDC0" plane="2" ch="80 + ch" data="data"/></FE>
+	<FE ch="48 + ch" data="data"><D Device="SDC0" plane="2" ch="95 - ch" data="data"/></FE>
       </for></for>
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="64 + ch" data="data"><D Device="SDC0" plane="0" ch="64 + ch" data="data"/></FE>
+	<FE ch="64 + ch" data="data"><D Device="SDC0" plane="0" ch="79 - ch" data="data"/></FE>
       </for></for>
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="80 + ch" data="data"><D Device="SDC0" plane="2" ch="64 + ch" data="data"/></FE>
+	<FE ch="80 + ch" data="data"><D Device="SDC0" plane="2" ch="79 - ch" data="data"/></FE>
       </for></for>
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="96 + ch" data="data"><D Device="SDC0" plane="0" ch="48 + ch" data="data"/></FE>
+	<FE ch="96 + ch" data="data"><D Device="SDC0" plane="0" ch="63 - ch" data="data"/></FE>
       </for></for>
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="112 + ch" data="data"><D Device="SDC0" plane="2" ch="48 + ch" data="data"/></FE>
+	<FE ch="112 + ch" data="data"><D Device="SDC0" plane="2" ch="63 - ch" data="data"/></FE>
       </for></for>
     </HulMHTdc>
     <HulMHTdc node_id="2012" name="hul03sdc-0-1">
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="ch" data="data"><D Device="SDC0" plane="0" ch="32 + ch" data="data"/></FE>
+	<FE ch="ch" data="data"><D Device="SDC0" plane="0" ch="47 - ch" data="data"/></FE>
       </for></for>
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="16 + ch" data="data"><D Device="SDC0" plane="2" ch="32 + ch" data="data"/></FE>
+	<FE ch="16 + ch" data="data"><D Device="SDC0" plane="2" ch="47 - ch" data="data"/></FE>
       </for></for>
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="32 + ch" data="data"><D Device="SDC0" plane="0" ch="16 + ch" data="data"/></FE>
+	<FE ch="32 + ch" data="data"><D Device="SDC0" plane="0" ch="31 - ch" data="data"/></FE>
       </for></for>
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="48 + ch" data="data"><D Device="SDC0" plane="2" ch="16 + ch" data="data"/></FE>
+	<FE ch="48 + ch" data="data"><D Device="SDC0" plane="2" ch="31 - ch" data="data"/></FE>
       </for></for>
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="64 + ch" data="data"><D Device="SDC0" plane="0" ch="ch" data="data"/></FE>
+	<FE ch="64 + ch" data="data"><D Device="SDC0" plane="0" ch="15 - ch" data="data"/></FE>
       </for></for>
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
-	<FE ch="80 + ch" data="data"><D Device="SDC0" plane="2" ch="ch" data="data"/></FE>
+	<FE ch="80 + ch" data="data"><D Device="SDC0" plane="2" ch="15 - ch" data="data"/></FE>
       </for></for>
       <for var="ch" from="0" to="15"><for var="data" from="0" to="2">
 	<FE ch="96 + ch" data="data"><D Device="SDC0" plane="1" ch="ch" data="data"/></FE>
