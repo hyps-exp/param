@@ -14,6 +14,8 @@
       <!-- 	  <D Device="VME-RM" Plane="vme01" ch="ch" data="data"/></FE> -->
       <!-- 	</for></for> -->
       <!-- </VmeRm> -->
+
+<!-- original
       <VmeCaenV792 address="0xad020000">
         <for var="ch" from="0" to="15">
           <FE ch="ch"><D Device="TOF" segment="ch" ch="0" data="0"/></FE>
@@ -23,6 +25,26 @@
         </for>
       </VmeCaenV792>
     </VmeMaster>
+-->
+
+    <VmeCaenV792 address="0xad020000">
+      <for var="ch" from="0" to="10">
+        <FE ch="ch"><D Device="TOF" segment="ch" ch="0" data="0"/></FE>
+      </for>
+      <for var="ch" from="11" to="12">
+        <FE ch="ch"><D Device="T0" segment="0" ch="ch - 11" data="0"/></FE>
+      </for>
+      <for var="ch" from="13" to="13">
+        <FE ch="ch"><D Device="SAC" segment="0" data="0"/></FE>
+      </for>
+      <for var="ch" from="14" to="15">
+        <FE ch="ch"><D Device="E_Veto" segment="0" ch="ch - 14" data="0"/></FE>
+      </for>
+      <for var="ch" from="16" to="31">
+        <FE ch="ch"><D Device="null"/></FE>
+      </for>
+    </VmeCaenV792>
+  </VmeMaster>
 
     <!-- <VmeMaster node_id="1540" name="optlink01_v1725"> -->
     <!--   <VmeCaenV1725ZLE address="0xADE00000"> -->
@@ -443,6 +465,21 @@
       </for></for>
       <for var="ch" from="32" to="63"><for var="data" from="0" to="3">
 	<FE ch="ch" data="data"><D Device="TOF" segment="ch - 32" ch="1" data="data + 1"/></FE>
+      </for></for>
+    </HulHRTdc>
+
+    <HulHRTdc node_id="2102" name="hul01hr-2">
+      <for var="ch" from="0" to="1"><for var="data" from="0" to="3">
+	<FE ch="ch" data="data"><D Device="T0" segment="0" ch="ch" data="data + 1"/></FE>
+      </for></for>
+      <for var="ch" from="2" to="2"><for var="data" from="0" to="3">
+	<FE ch="ch" data="data"><D Device="SAC" segment="0" data="data + 1"/></FE>
+      </for></for>
+      <for var="ch" from="3" to="4"><for var="data" from="0" to="3">
+	<FE ch="ch" data="data"><D Device="E_Veto" segment="0" ch="ch - 3" data="data + 1"/></FE>
+      </for></for>
+      <for var="ch" from="5" to="63"><for var="data" from="0" to="3">
+	<FE ch="ch" data="data"><D Device="null"/></FE>
       </for></for>
     </HulHRTdc>
 
