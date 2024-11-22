@@ -115,7 +115,7 @@ TrailingSDC5 0 1300
 ### BC/SDC TOT cut
 MinTotBcOut 20
 MinTotSDC0 30
-MinTotSDC1 30
+MinTotSDC1 50
 MinTotSDC2 30
 MinTotSDC3 50
 MinTotSDC4 50
