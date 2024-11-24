@@ -2257,7 +2257,7 @@
     </VmeEasiroc>
 
     <!--__BGO______-->
-    <VmeMaster node_id="7071" name="optlink01">
+    <VmeMaster node_id="5001" name="optlink01">
       <VmeCaenV1724 address="0xAAD10000">
         <for var="ch" from="0" to="7">
           <FE ch="ch"><D Device="BGO" segment="ch + 8" ch="0" data="0"/></FE>
