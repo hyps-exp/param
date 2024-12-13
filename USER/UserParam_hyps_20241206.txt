@@ -123,11 +123,10 @@ MinTotSDC4 50
 MinTotSDC5 50
 
 ### BC/SDC plane multiplicity gate
-MinLayerBcOut 8
-MinLayerSdcIn 8
+MinLayerSdcIn 7
 
 ### SDCOUT plane multiplicity gate (+2 in SdcOutTracking)
-MinLayerSdcOut  10
+MinLayerSdcOut  8
 
 ### BC/SDC multiplicity gate
 MaxMultiHitBcOut 16
@@ -143,9 +142,8 @@ StopTimeDiffSdcOut 150
 ### STOF offset between BH2-Target
 StofOffset	-2.0378
 
-### BcOutSdcInTracking
-#MinLayerBcOutSdcIn 22
-MinLayerBcOutSdcIn 20
+### SdcInSdcOutTracking
+MinLayerSdcInSdcOut 9
 
 #### TARGET
 FF_PLUS 0
