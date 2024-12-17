@@ -298,7 +298,7 @@
   <!-- CATCH  -->
   <!-- copied from digit_data_20200523.xml -->
   <!--________________________________________________________________-->
-  <device id="31" name="CFT">
+  <device id="31" name="CFT" type="Fiber">
     <plane id="0" name="UV1"><for var="seg" from="0" to="450">
       <segment id="seg">
           <data id="0" name="leading"/>
