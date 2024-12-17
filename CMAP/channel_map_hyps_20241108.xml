@@ -1227,13 +1227,19 @@
       </FE></for></for>
       <!-- lower half PHI2 672~691 -->
       <!-- aka -->
-      <for var="ch" from="0" to="15"><for var="data" from="0" to="3">
+      <for var="ch" from="0" to="9"><for var="data" from="0" to="3">
         <FE ch="2*ch + 32" data="data">
 	  <D Device="CFT" plane="3" segment="2*ch + 1 + 672" data="data"/>
       </FE></for></for>
-      <for var="ch" from="0" to="15"><for var="data" from="0" to="3">
+      <for var="ch" from="0" to="9"><for var="data" from="0" to="3">
         <FE ch="2*ch + 1 + 32" data="data">
 	  <D Device="CFT" plane="3" segment="2*ch + 672" data="data"/>
+      </FE></for></for>
+      <!-- updated 2024/12/17-->
+      <!-- no fiber -->
+      <for var="ch" from="52" to="63"><for var="data" from="0" to="3">
+        <FE ch="ch" data="data">
+          <D Device="VMEEASIROCdummy" plane="49" segment="ch" data="data"/>
       </FE></for></for>
     </VmeEasiroc>
     <!-- .50 V2-13&V2-14 384~445-->
@@ -1695,13 +1701,18 @@
         <FE ch="2*ch +1" data="data">
 	  <D Device="CFT" plane="5" segment="2*ch + 768" data="data"/>
       </FE></for></for>
-      <!-- lower half  V2 448~471 -->
-      <!-- mada -->
-      <for var="ch" from="0" to="15"><for var="data" from="0" to="3">
+      <!-- updated 2024/12/17 -->
+      <!-- no fiber -->
+      <for var="ch" from="32" to="39"><for var="data" from="0" to="3">
+        <FE ch="ch" data="data">
+          <D Device="VMEEASIROCdummy" plane="71" segment="ch" data="data"/>
+      </FE></for></for>
+      <!-- lower half  V2 448~471 -->      
+      <for var="ch" from="4" to="15"><for var="data" from="0" to="3">
         <FE ch="2*ch +32" data="data">
 	  <D Device="CFT" plane="2" segment="30 - (2*ch) + 448" data="data"/>
       </FE></for></for>
-      <for var="ch" from="0" to="15"><for var="data" from="0" to="3">
+      <for var="ch" from="4" to="15"><for var="data" from="0" to="3">
         <FE ch="2*ch +1 +32" data="data">
 	  <D Device="CFT" plane="2" segment="31 - (2*ch) + 448" data="data"/>
       </FE></for></for>
@@ -2170,14 +2181,20 @@
         <FE ch="2*ch +1" data="data">
 	  <D Device="CFT" plane="7" segment="2*ch + 864" data="data"/>
       </FE></for></for>
-      <!-- lower half PHI4 896~926 -->
-      <for var="ch" from="0" to="15"><for var="data" from="0" to="3">
+      <!-- lower half PHI4 896~909 -->
+      <for var="ch" from="0" to="6"><for var="data" from="0" to="3">
         <FE ch="2*ch +32" data="data">
 	  <D Device="CFT" plane="7" segment="2*ch +1 + 896" data="data"/>
       </FE></for></for>
-      <for var="ch" from="0" to="15"><for var="data" from="0" to="3">
+      <for var="ch" from="0" to="6"><for var="data" from="0" to="3">
         <FE ch="2*ch +1 +32" data="data">
 	  <D Device="CFT" plane="7" segment="2*ch + 896" data="data"/>
+      </FE></for></for>
+      <!-- updated 2024/12/17-->
+      <!-- no fiber -->
+      <for var="ch" from="46" to="63"><for var="data" from="0" to="3">
+        <FE ch="ch" data="data">
+          <D Device="VMEEASIROCdummy" plane="49" segment="ch" data="data"/>
       </FE></for></for>
     </VmeEasiroc>
     <!-- .94 V4-15&V4-16 448~511-->

@@ -2292,7 +2292,6 @@
         <FE ch="ch" data="data">
           <D Device="VMEEASIROCdummy" plane="49" segment="ch" data="data"/>
       </FE></for></for>
-      
     </VmeEasiroc>
     <!-- .94 V4-15&V4-16 448~511-->
     <VmeEasiroc node_id="4094" name="Veasiroc94">
