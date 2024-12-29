@@ -147,6 +147,16 @@ StofOffset	-2.0378
 ### SdcInSdcOutTracking
 MinLayerSdcInSdcOut 9
 
+
+### CFTTracking
+MinLayerCFTPhi 3
+MinLayerCFTUV  3
+TimeCFT      -15  40
+AdcCFT         0  4000
+
+
+
+
 #### TARGET
 FF_PLUS 0
 
