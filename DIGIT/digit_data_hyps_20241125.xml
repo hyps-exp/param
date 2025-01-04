@@ -366,11 +366,11 @@
   </device>
 
   <!--________________________________________________________________-->
-  <device id="32" name="BGO">
+  <device id="32" name="BGO" type="Hodo">
     <for var="plane" from="0" to="1"><plane id="plane">
       <for var="seg" from="0" to="23"><segment id="seg">
-          <data id="0" name="fadc"/>
-          <data id="1" name="leading"/>
+          <data id="0" name="adc"/>
+          <data id="1" name="tdc"/>
           <data id="2" name="trailing"/>
           <data id="3" name="overflow"/>
       </segment></for>
