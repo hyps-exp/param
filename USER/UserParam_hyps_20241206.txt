@@ -4,30 +4,6 @@
 #------------------------------------------------------------------------------
 # Hodoscope
 #------------------------------------------------------------------------------
-
-### BH1
-TdcBH1 450000 550000
-DeBH1 0.3 4
-
-### BH2
-TdcBH2 200000 300000
-DeBH2 0.3 4
-
-### BH2 Mt gate (for Time0)
-MtBH2 -2 2
-
-### BTOF gate
-BTOF -2 2
-
-### BAC
-TdcBAC 700 800
-
-### AFT
-TdcAFT 800 900
-TimeAFT -5 5
-DeAFT 0.2 20
-TotRefAFT 65.
-
 ### VMEEASIROC
 TdcVMEEASIROC 730 770
 TotRefVMEEASIROC 40.0
@@ -38,6 +14,10 @@ DeTOF 0.3 4
 
 ### TOF time range
 TimeTOF 7 25
+
+## TAG
+TdcSF 500 750
+TdcPL 500 750
 
 ### SAC
 #TdcSAC		170 270
@@ -63,13 +43,38 @@ TdcCFT		500 650
 ### PiID
 TdcPiID		0 1000
 
-### WC
-TdcWC		230 330
 
+## E70 parameters (should be removed)
 ### BFT
 TdcBFT 600 750
 TimeBFT -5 5
 TotRefBFT 39.9 40.1
+
+### BH1
+TdcBH1 450000 550000
+DeBH1 0.3 4
+
+### BH2
+TdcBH2 200000 300000
+DeBH2 0.3 4
+
+### BH2 Mt gate (for Time0)
+MtBH2 -2 2
+
+### BTOF gate
+BTOF -2 2
+
+### BAC
+TdcBAC 700 800
+
+### AFT
+TdcAFT 800 900
+TimeAFT -5 5
+DeAFT 0.2 20
+TotRefAFT 65.
+
+### WC
+TdcWC		230 330
 
 #------------------------------------------------------------------------------
 # for Cluster
