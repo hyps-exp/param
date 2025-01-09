@@ -76,6 +76,8 @@ TotRefBFT 39.9 40.1
 #------------------------------------------------------------------------------
 MaxClusterSizeBH1	1
 MaxClusterSizeBH2	1
+MaxClusterSizeTAG-SF	55
+MaxClusterSizeTAG-PL	1
 MaxClusterSizeBAC	1
 MaxClusterSizeTOF	1
 MaxClusterSizeAC1	1
@@ -85,6 +87,8 @@ MaxClusterSizeAFT	10
 MaxClusterSizeCFT	10
 MaxTimeDiffBH1		2.0
 MaxTimeDiffBH2		2.0
+MaxTimeDiffTAG-SF	5.0
+MaxTimeDiffTAG-PL	5.0
 MaxTimeDiffBAC		-1.0
 MaxTimeDiffTOF		-1.0
 MaxTimeDiffAC1		-1.0
