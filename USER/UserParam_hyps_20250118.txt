@@ -18,7 +18,7 @@ TimeTOF 7 25
 ## TAG
 #TdcSF 500 750
 TdcSF 600 660
-TdcPL 570 610
+TdcPL 550 600
 
 ### UpVeto
 #TdcUpVeto	170 270
