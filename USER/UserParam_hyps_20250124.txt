@@ -27,6 +27,7 @@ TdcUpVeto	100000 300000
 ### T0
 #TdcT0		170 270
 TdcT0		100000 300000
+DeT0 0.3 4
 
 ### SAC
 #TdcSAC		170 270
@@ -86,6 +87,7 @@ TdcWC		230 330
 #------------------------------------------------------------------------------
 MaxClusterSizeBH1	1
 MaxClusterSizeBH2	1
+MaxClusterSizeT0	1
 MaxClusterSizeTAG-SF	55
 MaxClusterSizeTAG-PL	1
 MaxClusterSizeBAC	1
@@ -97,6 +99,7 @@ MaxClusterSizeAFT	10
 MaxClusterSizeCFT	10
 MaxTimeDiffBH1		2.0
 MaxTimeDiffBH2		2.0
+MaxTimeDiffT0		2.0
 MaxTimeDiffTAG-SF	5.0
 MaxTimeDiffTAG-PL	5.0
 MaxTimeDiffBAC		-1.0
