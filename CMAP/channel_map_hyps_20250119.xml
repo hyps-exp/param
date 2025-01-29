@@ -33,9 +33,10 @@
       </for>
     </VmeCaenV792>
 
-    <VmeCaenV792 address="0xad020000">
+<!--  tof36da and tof37  swapped  run13-233> -->
+        <VmeCaenV792 address="0xad020000">
       <for var="ch" from="0" to="1">
-        <FE ch="ch"><D Device="TOF" segment="ch + 36" ch="1" data="0"/></FE>
+        <FE ch="ch"><D Device="TOF" segment="37 - ch" ch="1" data="0"/></FE>
       </for>
       <for var="ch" from="2" to="3">
         <FE ch="ch"><D Device="TOF" segment="ch + 38" ch="1" data="0"/></FE>
