@@ -22,7 +22,7 @@
 #
 # Id   Name   Xsks[mm]  Ysks[mm]  Zsks[mm] TA[deg] RA1[deg] RA2[deg] L[mm]  Res[mm]  W0  dXdW[mm]  Ofs[mm]
 #
-  0 Target     -1258.0    0.0     0.0     0.0     90.0    90.0    0.0   0.     0.       1.     0.
+0 Target      0.0     0.0       -1258.0    0.0       0.0      0.0    0.0   0.     0.       1.     0.
 ### CFT
 # Id   Name   Xsks[mm]  Ysks[mm]  Zsks[mm] dZ/dphi(mm/deg) RA1[deg] RA2[deg] R[mm]  Res[mm]  W0  dZ0dW[Z0/fiber]  Ofs[degree]
 # Id   Name   Xsks[mm]  Ysks[mm]  Zsks[mm] TA[deg]         RA1[deg] RA2[deg] R[mm]  Res[mm]  W0  dXdW[deg/fiber]  Ofs[degree]
@@ -81,5 +81,6 @@
   42 TOF-DX-L     0.0      87.0   3151.500   0.00   00.00   00.00   4409.500   31.7  23.333  75.00  50.00
   43 TOF-UX-R     0.0      87.0   3111.500   0.00   00.00   00.00   4369.500   31.7  23.666  75.00  50.00
   44 TOF-DX-R     0.0      87.0   3151.500   0.00   00.00   00.00   4409.500   31.7  23.666  75.00  50.00
+  50 TOF          0.0     0.0    3312.462   00.00   00.00   00.00   4570.462   0.00  23.5  0.0  0.0
   51 TOF-X	  0.0      87.0   3151.500   0.00   00.00   00.00   4409.500   31.7  23.333  75.00  0.00
   52 TOF-Y        0.0      87.0   3111.500   90.00   00.00   00.00  4409.500   30.0  23.333  75.00  0.00
