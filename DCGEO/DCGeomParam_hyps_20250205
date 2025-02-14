@@ -22,7 +22,7 @@
 #
 # Id   Name   Xsks[mm]  Ysks[mm]  Zsks[mm] TA[deg] RA1[deg] RA2[deg] L[mm]  Res[mm]  W0  dXdW[mm]  Ofs[mm]
 #
-  0 Target     0.0    0.0     0.0    -1258.0     0.0    0.0    0.0   0.     0.       1.     0.
+  0 Target     0.0    0.0     -1258.0    0.0     0.0    0.0    0.0   0.     0.       1.     0.
 ### CFT
 # Id   Name   Xsks[mm]  Ysks[mm]  Zsks[mm] dZ/dphi(mm/deg) RA1[deg] RA2[deg] R[mm]  Res[mm]  W0  dZ0dW[Z0/fiber]  Ofs[degree]
 # Id   Name   Xsks[mm]  Ysks[mm]  Zsks[mm] TA[deg]         RA1[deg] RA2[deg] R[mm]  Res[mm]  W0  dXdW[deg/fiber]  Ofs[degree]
