@@ -155,8 +155,8 @@ StopTimingSdcOut 360 400
 ### SdcOut dT offset for L1 stop timing
 StopTimeDiffSdcOut 150
 
-### STOF offset between BH2-Target
-StofOffset	-2.0378
+### STOF offset between T0-Target (about 45cm after Target)
+StofOffset	1.500
 
 ### SdcInSdcOutTracking
 MinLayerSdcInSdcOut 9
