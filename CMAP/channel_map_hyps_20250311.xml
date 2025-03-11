@@ -111,7 +111,7 @@
     </VmeCaenV1724>
   </VmeMaster>
 
-  <VmeMaster node_id="1540" name="optlink01_v1725">
+  <VmeMaster node_id="5002" name="optlink02">
     <VmeCaenV1725ZLE address="0xADE00000">
       <for var="ch" from="0" to="1">
 	<FE ch="ch"><D Device="BGO" segment="ch + 14" ch="0" data="0"/></FE>
