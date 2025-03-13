@@ -15,6 +15,9 @@ DeTOF 0.3 4
 ### TOF time range
 TimeTOF 7 25
 
+## RF (please check SP-8 filling pattern and/or time interval of RF1st)
+BunchInterval 23.6
+
 ## TAG
 #TdcSF 500 750
 TdcSF 560 660
@@ -88,6 +91,7 @@ TdcWC		230 330
 MaxClusterSizeBH1	1
 MaxClusterSizeBH2	1
 MaxClusterSizeT0	1
+MaxClusterSizeRF	1
 MaxClusterSizeTAG-SF	55
 MaxClusterSizeTAG-PL	1
 MaxClusterSizeBAC	1
@@ -99,6 +103,7 @@ MaxClusterSizeAFT	10
 MaxClusterSizeCFT	10
 MaxTimeDiffBH1		2.0
 MaxTimeDiffBH2		2.0
+MaxTimeDiffRF		5.0
 MaxTimeDiffT0		2.0
 MaxTimeDiffTAG-SF	5.0
 MaxTimeDiffTAG-PL	5.0
