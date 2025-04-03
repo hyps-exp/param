@@ -95,6 +95,7 @@ MaxClusterSizeWC	1
 MaxClusterSizeBFT	10
 MaxClusterSizeAFT	10
 MaxClusterSizeCFT	10
+MaxClusterSizePiID	3
 MaxTimeDiffBH1		2.0
 MaxTimeDiffBH2		2.0
 MaxTimeDiffTAG-SF	5.0
@@ -106,6 +107,7 @@ MaxTimeDiffWC		-1.0
 MaxTimeDiffBFT		8.0
 MaxTimeDiffAFT		8.0
 MaxTimeDiffCFT		8.0
+MaxTimeDiffPiID		8.0
 
 #------------------------------------------------------------------------------
 # BC/SDC
