@@ -365,7 +365,7 @@
   </device>
 
   <!--________________________________________________________________-->
-  <device id="32" name="BGO">
+  <device id="32" name="BGO" type="Hodo">
     <for var="plane" from="0" to="1"><plane id="plane">
       <for var="seg" from="0" to="23"><segment id="seg">
           <data id="0" name="fadc"/>
@@ -377,7 +377,7 @@
   </device>
 
   <!--________________________________________________________________-->
-  <device id="33" name="PiID"> <for var="seg" from="0" to="31">
+  <device id="33" name="PiID" type="Fiber"> <for var="seg" from="0" to="31">
     <segment id="seg">
           <data id="0" name="leading"/>
           <data id="1" name="trailing"/>
