@@ -45,6 +45,10 @@ TdcRF	170 270
 
 ### BGO
 TdcBGO		0 1000
+# pulse time (us) 
+PulseTimeBGO         -0.1   0.1
+# tdc time (ns) 
+TimeBGO              -50    50
 
 ### CFT
 TdcCFT		500 650
