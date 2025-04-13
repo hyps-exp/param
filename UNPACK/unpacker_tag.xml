@@ -19,10 +19,10 @@
       <disagreement
        	 local="true"
 	 event="true"
-	 spill="true"/>
+	 spill="false"/>
       <show
 	  all="true"
-	  always="false"
+	  always="true"
 	  char_true="!" char_false="."/>
     </error_check>
 
