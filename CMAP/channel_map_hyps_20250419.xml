@@ -133,6 +133,9 @@
       <for var="ch" from="0" to="9">
 	<FE ch="ch"><D Device="TAG-PL" segment="ch" ch="0" data="0"/></FE>
       </for>
+      <for var="ch" from="10" to="14">
+	<FE ch="ch"><D Device="null"/></FE>
+      </for>
       <FE ch="15"><D Device="V1725-STOP" segment="0" ch="0" data="0"/></FE>
     </VmeCaenV1725ZLE>
   </VmeMaster>

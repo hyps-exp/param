@@ -131,10 +131,14 @@
   <VmeMaster node_id="5003" name="optlink03">
     <VmeCaenV1725ZLE address="0xADE00000">
       <FE ch="0"><D Device="TAG-PL" segment="0" ch="0" data="0"/></FE>
+      <FE ch="1"><D Device="null"/></FE>
       <for var="ch" from="2" to="9">
 	<FE ch="ch"><D Device="TAG-PL" segment="ch" ch="0" data="0"/></FE>
       </for>
       <FE ch="10"><D Device="TAG-PL" segment="1" ch="0" data="0"/></FE>
+      <for var="ch" from="11" to="14">
+	<FE ch="ch"><D Device="null"/></FE>
+      </for>
       <FE ch="15"><D Device="V1725-STOP" segment="0" ch="0" data="0"/></FE>
     </VmeCaenV1725ZLE>
   </VmeMaster>
