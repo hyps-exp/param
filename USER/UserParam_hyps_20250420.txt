@@ -38,7 +38,7 @@ DeT0 0.3 4
 TdcSAC		325000 335000
 
 ### E_Veto
-TdcE_Veto	170 270
+TdcE_Veto	280000 380000
 
 ###RF
 TdcRF	170 270
