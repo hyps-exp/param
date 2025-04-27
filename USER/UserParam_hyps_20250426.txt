@@ -12,10 +12,10 @@ TotRefVMEEASIROC 40.0
 TdcTOF		200000	300000
 DeTOF 0.3 4
 
-TdcTOF_KURAMA_U	205000	245000 #for Online, mean +- 20*10^3 ch 
-TdcTOF_KURAMA_D	210000	250000 #for Online, mean +- 20*10^3 ch
-TdcTOF_LEPS_U	195000	235000 #for Online, mean +- 20*10^3 ch
-TdcTOF_LEPS_D	215000	255000 #for Online, mean +- 20*10^3 ch
+TdcTOF_KURAMA_U	185000	265000 #for Online, mean +- 40*10^3 ch
+TdcTOF_KURAMA_D	190000	270000 #for Online, mean +- 40*10^3 ch
+TdcTOF_LEPS_U	175000	255000 #for Online, mean +- 40*10^3 ch
+TdcTOF_LEPS_D	195000	275000 #for Online, mean +- 40*10^3 ch
 
 ### TOF time range
 TimeTOF 7 25
