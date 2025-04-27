@@ -11,6 +11,11 @@ TotRefVMEEASIROC 40.0
 ### TOF
 TdcTOF 200000 300000
 DeTOF 0.3 4
+TdcTOF_KURAMA_U	200000	300000
+TdcTOF_KURAMA_D	200000	300000
+TdcTOF_LEPS_U	200000	300000
+TdcTOF_LEPS_D	200000	300000
+
 
 ### TOF time range
 TimeTOF 7 25
@@ -41,9 +46,9 @@ TdcRF	170 270
 
 ### BGO
 TdcBGO		0 1000
-# pulse time (us) 
+# pulse time (us)
 PulseTimeBGO         -0.1   0.1
-# tdc time (ns) 
+# tdc time (ns)
 TimeBGO              -50    50
 
 ### CFT
