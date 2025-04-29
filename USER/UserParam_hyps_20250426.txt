@@ -30,7 +30,7 @@ TdcPL 550 610
 
 ### UpVeto
 #TdcUpVeto	170 270
-TdcUpVeto	100000 300000
+TdcUpVeto	200000 350000
 
 ### T0
 #TdcT0		170 270
