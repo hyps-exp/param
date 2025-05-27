@@ -21,8 +21,8 @@ TdcTOF_LEPS_D	195000	275000 #for Online, mean +- 40*10^3 ch
 TimeTOF 7 25
 
 ## RF (please check SP-8 filling pattern and/or time interval of RF1st)
-BunchInterval 23.6
-Bunchpol2 0 0 0
+BunchInterval 1.966
+Bunchpol2 0 -0.32 0.064
 
 ## TAG
 #TdcSF 500 750
