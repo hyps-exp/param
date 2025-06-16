@@ -23,6 +23,8 @@ TimeTOF 7 25
 ## RF (please check SP-8 filling pattern and/or time interval of RF1st)
 BunchInterval 23.6
 
+Bunchpol2 0 0 0
+
 ## TAG
 #TdcSF 500 750
 TdcSF 560 660
