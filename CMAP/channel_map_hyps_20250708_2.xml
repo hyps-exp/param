@@ -53,19 +53,22 @@
 	<for var="ch" from="19" to="19">
           <FE ch="ch"><D Device="TOF" segment="ch + 17" ch="1" data="0"/></FE>
 	</for>
-	<for var="ch" from="20" to="20">
+	<for var="ch" from="20" to="21">
           <FE ch="ch"><D Device="null"/></FE>
-	</for>
-	<for var="ch" from="21" to="21">
-          <FE ch="ch"><D Device="TOF" segment="ch + 24" ch="1" data="0"/></FE>
 	</for>
 	<for var="ch" from="22" to="26">
           <FE ch="ch"><D Device="null"/></FE>
 	</for>
 	<for var="ch" from="27" to="27">
-          <FE ch="ch"><D Device="TOF" segment="ch + 20" ch="1" data="0"/></FE>
+          <FE ch="ch"><D Device="TOF" segment="45" ch="1" data="0"/></FE>
 	</for>
-	<for var="ch" from="28" to="31">
+	<for var="ch" from="28" to="29">
+          <FE ch="ch"><D Device="null"/></FE>
+	</for>
+	<for var="ch" from="30" to="30">
+          <FE ch="ch"><D Device="TOF" segment="ch + 15" ch="1" data="0"/></FE>
+	</for>
+	<for var="ch" from="31" to="31">
           <FE ch="ch"><D Device="null"/></FE>
 	</for>
       </VmeCaenV792>
@@ -93,11 +96,8 @@
 	<for var="ch" from="29" to="29">
           <FE ch="ch"><D Device="null"/></FE>
 	</for>
-	<for var="ch" from="30" to="30">
+	<for var="ch" from="30" to="31">
           <FE ch="ch"><D Device="TOF" segment="ch + 16" ch="1" data="0"/></FE>
-	</for>
-	<for var="ch" from="31" to="31">
-          <FE ch="ch"><D Device="null"/></FE>
 	</for>
       </VmeCaenV792>
     </VmeMaster>
