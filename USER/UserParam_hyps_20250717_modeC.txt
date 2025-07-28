@@ -1,0 +1,213 @@
+#
+#  UserParam_hyps_20250717_modeC.txt
+#
+#------------------------------------------------------------------------------
+# Hodoscope
+#------------------------------------------------------------------------------
+### VMEEASIROC
+TdcVMEEASIROC 730 770
+TotRefVMEEASIROC 40.0
+
+### TOF
+TdcTOF 200000 300000
+DeTOF 0.3 4
+
+### TOF time range
+TimeTOF 7 25
+
+## RF
+BunchInterval 1.966
+Bunchpol2 0 0 0
+
+## TAG
+TdcSF 500 750
+TdcPL 500 750
+
+### UpVeto
+#TdcUpVeto	170 270
+TdcUpVeto	290000 320000
+
+### T0
+#TdcT0		170 270
+TdcT0		320000 340000
+DeT0 0.3 4
+
+### SAC
+#TdcSAC		170 270
+# TdcSAC		100000 300000
+TdcSAC		325000 335000
+
+### E_Veto
+TdcE_Veto	170 270
+
+###RF
+TdcRF	170 270
+
+### BGO
+TdcBGO		0 1000
+# pulse time (us)
+PulseTimeBGO         -0.1   0.1
+# tdc time (ns)
+TimeBGO              -50    50
+
+### CFT
+TdcCFT		500 650
+
+### PiID
+TdcPiID		0 1000
+
+### CATCHPID
+#CATCHPID 0.303065 68.2464
+CATCHPID 0.496164 98.9864
+
+## E70 parameters (should be removed)
+### BFT
+TdcBFT 600 750
+TimeBFT -5 5
+TotRefBFT 39.9 40.1
+
+### BH1
+TdcBH1 450000 550000
+DeBH1 0.3 4
+
+### BH2
+TdcBH2 200000 300000
+
+
+### BH2 Mt gate (for Time0)
+MtBH2 -2 2
+
+### BTOF gate
+BTOF -2 2
+
+### BAC
+TdcBAC 700 800
+
+### AFT
+TdcAFT 800 900
+TimeAFT -5 5
+DeAFT 0.2 20
+TotRefAFT 65.
+
+### WC
+TdcWC		230 330
+
+#------------------------------------------------------------------------------
+# for Cluster
+#------------------------------------------------------------------------------
+MaxClusterSizeBH1	1
+MaxClusterSizeBH2	1
+MaxClusterSizeT0	1
+MaxClusterSizeRF	1
+MaxClusterSizeTAG-SF	55
+MaxClusterSizeTAG-PL	1
+MaxClusterSizeBAC	1
+MaxClusterSizeTOF	1
+MaxClusterSizeAC1	1
+MaxClusterSizeWC	1
+MaxClusterSizeBFT	10
+MaxClusterSizeAFT	10
+MaxClusterSizeCFT	20
+MaxClusterSizePiID	3
+MaxTimeDiffBH1		2.0
+MaxTimeDiffBH2		2.0
+MaxTimeDiffT0		2.0
+MaxTimeDiffRF		5.0
+MaxTimeDiffTAG-SF	5.0
+MaxTimeDiffTAG-PL	5.0
+MaxTimeDiffBAC		-1.0
+MaxTimeDiffTOF		-1.0
+MaxTimeDiffAC1		-1.0
+MaxTimeDiffWC		-1.0
+MaxTimeDiffBFT		8.0
+MaxTimeDiffAFT		8.0
+MaxTimeDiffCFT		20.0
+MaxTimeDiffPiID		8.0
+
+#------------------------------------------------------------------------------
+# BC/SDC
+#------------------------------------------------------------------------------
+
+### BC/SDC TDC gate range
+TdcBC3 200 1200
+TdcBC4 200 1200
+TdcSDC0 200 400
+TdcSDC1 400 850
+TdcSDC2 300 850
+TdcSDC3 300 850
+TdcSDC4 200 1600
+TdcSDC5 200 1600
+
+### SDCout Trailing gate range
+TrailingSDC0 0 1000
+TrailingSDC1 350 850
+TrailingSDC2 0 1000
+TrailingSDC3 0 1300
+TrailingSDC4 0 1300
+TrailingSDC5 0 1300
+
+### BC/SDC TOT cut
+MinTotBcOut 30
+MinTotSDC0 10
+MinTotSDC1 50
+MinTotSDC2 30
+MinTotSDC3 40
+MinTotSDC4 50
+MinTotSDC5 50
+
+### BC/SDC plane multiplicity gate
+MinLayerSdcIn 8
+
+### SDCOUT plane multiplicity gate (+2 in SdcOutTracking)
+MinLayerSdcOut  8
+
+### BC/SDC multiplicity gate
+MaxMultiHitBcOut 16
+MaxMultiHitSdcIn 16
+MaxMultiHitSdcOut 16
+
+### CommonStop timing of "L1" for SdcOut
+StopTimingSdcOut 360 400
+
+### SdcOut dT offset for L1 stop timing
+StopTimeDiffSdcOut 150
+
+### STOF offset between T0-Target
+StofOffset	1.500 //about 45cm after Target
+
+### SdcInSdcOutTracking
+MinLayerSdcInSdcOut 12
+
+
+### CFTTracking
+MinLayerCFTPhi 3
+MinLayerCFTUV  3
+TimeCFT      -15  40
+AdcCFT         0  4000
+
+
+
+
+#### TARGET
+FF_PLUS 0
+
+### Conversion parameters(timediff to hitposition)
+PropagationBH2 137.815
+PropagationHTOF 158.167
+
+# E72E90
+TdcE72BAC		0 2000000
+TdcE90SAC		0 2000000
+TdcE72KVC		0 2000000
+TdcE42BH2		0 2000000
+TdcT1		0 2000000
+TdcT2		0 2000000
+
+### SAC3 & SFV TDC gate range
+TdcSAC3		0 2000000
+TdcSFV		0 2000000
+
+### TF TDC gate range
+TdcTF_TF		0 2000000
+TdcTF_GN1		0 2000000
+TdcTF_GN2		0 2000000
