@@ -1686,7 +1686,7 @@
         <FE ch="2*ch +1" data="data">
 	  <D Device="CFT" plane="5" segment="2*ch +1 + 448" data="data"/>
       </FE></for></for>
-      <!-- lower half PHI3 480~511 : moved to RAYRAW_1 (see Rayraw node below) 2026/10/04 -->
+      <!-- lower half PHI3 480~511 : moved to RAYRAW_1 -->
       <for var="ch" from="32" to="63"><for var="data" from="0" to="3">
         <FE ch="ch" data="data">
           <D Device="VMEEASIROCdummy" plane="31" segment="ch" data="data"/>
@@ -2165,7 +2165,7 @@
         <FE ch="2*ch +1" data="data">
 	  <D Device="CFT" plane="7" segment="31 - (2*ch) + 512" data="data"/>
       </FE></for></for>
-      <!-- lower half PHI4 544~575 : moved to RAYRAW_0 (see Rayraw node below) 2026/10/04 -->
+      <!-- lower half PHI4 544~575 : moved to RAYRAW_0 -->
       <for var="ch" from="32" to="63"><for var="data" from="0" to="3">
         <FE ch="ch" data="data">
           <D Device="VMEEASIROCdummy" plane="31" segment="ch" data="data"/>
@@ -2380,38 +2380,79 @@
       </FE></for></for>
     </VmeEasiroc>
 
-    <!--________________________________________________________________-->
-    <!-- CFT phi3(480~511) / phi4(544~575) read out by RAYRAW instead of VmeEasiroc, added 2026/10/04 -->
+    <!-- CFT phi3(480~511) / phi4(544~575) read out by RAYRAW -->
     <!-- RAYRAW_0 : CFT phi4 layer 544~575, replaces Veasiroc85 ch32~63 -->
+    <!-- Rayraw raw data id : 0=fadc waveform, 1=time tag, 2=TDC leading, 3=TDC trailing, 4=overflow -->
+    <!-- CFT(Fiber) digit id: 0=leading, 1=trailing, 2=highgain, 3=lowgain -->
     <Rayraw node_id="0x101" name="RAYRAW_0">
-      <for var="ch" from="0" to="15"><for var="data" from="0" to="1">
-        <FE ch="2*ch" data="data">
-	  <D Device="CFT" plane="7" segment="2*ch +1 + 544" data="data"/>
-      </FE></for></for>
-      <for var="ch" from="0" to="15"><for var="data" from="0" to="1">
-        <FE ch="2*ch +1" data="data">
-	  <D Device="CFT" plane="7" segment="2*ch + 544" data="data"/>
-      </FE></for></for>
-      <for var="ch" from="0" to="31"><for var="data" from="2" to="4">
-        <FE ch="ch" data="data">
-          <D Device="RAYRAWdummy" plane="0" segment="ch" data="data"/>
-      </FE></for></for>
+      <!-- fadc waveform -> CFT highgain slot -->
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch" data="0"><D Device="CFT" plane="7" segment="2*ch +1 + 544" data="2"/></FE>
+      </for>
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch +1" data="0"><D Device="CFT" plane="7" segment="2*ch + 544" data="2"/></FE>
+      </for>
+      <!-- coarse counter (time tag parallel to fadc) -> CFT lowgain slot -->
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch" data="1"><D Device="CFT" plane="7" segment="2*ch +1 + 544" data="3"/></FE>
+      </for>
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch +1" data="1"><D Device="CFT" plane="7" segment="2*ch + 544" data="3"/></FE>
+      </for>
+      <!-- TDC leading -> CFT leading slot -->
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch" data="2"><D Device="CFT" plane="7" segment="2*ch +1 + 544" data="0"/></FE>
+      </for>
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch +1" data="2"><D Device="CFT" plane="7" segment="2*ch + 544" data="0"/></FE>
+      </for>
+      <!-- TDC trailing -> CFT trailing slot -->
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch" data="3"><D Device="CFT" plane="7" segment="2*ch +1 + 544" data="1"/></FE>
+      </for>
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch +1" data="3"><D Device="CFT" plane="7" segment="2*ch + 544" data="1"/></FE>
+      </for>
+      <!-- overflow (data=4) -->
+      <for var="ch" from="0" to="31">
+        <FE ch="ch" data="4"><D Device="RAYRAWdummy" plane="0" segment="ch" data="4"/></FE>
+      </for>
     </Rayraw>
 
     <!-- RAYRAW_1 : CFT phi3 layer 480~511, replaces Veasiroc63 ch32~63 -->
     <Rayraw node_id="0x102" name="RAYRAW_1">
-      <for var="ch" from="0" to="15"><for var="data" from="0" to="1">
-        <FE ch="2*ch" data="data">
-	  <D Device="CFT" plane="5" segment="2*ch +1 + 480" data="data"/>
-      </FE></for></for>
-      <for var="ch" from="0" to="15"><for var="data" from="0" to="1">
-        <FE ch="2*ch +1" data="data">
-	  <D Device="CFT" plane="5" segment="2*ch + 480" data="data"/>
-      </FE></for></for>
-      <for var="ch" from="0" to="31"><for var="data" from="2" to="4">
-        <FE ch="ch" data="data">
-          <D Device="RAYRAWdummy" plane="0" segment="ch" data="data"/>
-      </FE></for></for>
+      <!-- fadc waveform -> CFT highgain slot -->
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch" data="0"><D Device="CFT" plane="5" segment="2*ch +1 + 480" data="2"/></FE>
+      </for>
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch +1" data="0"><D Device="CFT" plane="5" segment="2*ch + 480" data="2"/></FE>
+      </for>
+      <!-- coarse counter (time tag parallel to fadc) -> CFT lowgain slot -->
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch" data="1"><D Device="CFT" plane="5" segment="2*ch +1 + 480" data="3"/></FE>
+      </for>
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch +1" data="1"><D Device="CFT" plane="5" segment="2*ch + 480" data="3"/></FE>
+      </for>
+      <!-- TDC leading -> CFT leading slot -->
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch" data="2"><D Device="CFT" plane="5" segment="2*ch +1 + 480" data="0"/></FE>
+      </for>
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch +1" data="2"><D Device="CFT" plane="5" segment="2*ch + 480" data="0"/></FE>
+      </for>
+      <!-- TDC trailing -> CFT trailing slot -->
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch" data="3"><D Device="CFT" plane="5" segment="2*ch +1 + 480" data="1"/></FE>
+      </for>
+      <for var="ch" from="0" to="15">
+        <FE ch="2*ch +1" data="3"><D Device="CFT" plane="5" segment="2*ch + 480" data="1"/></FE>
+      </for>
+      <!-- overflow (data=4) -->
+      <for var="ch" from="0" to="31">
+        <FE ch="ch" data="4"><D Device="RAYRAWdummy" plane="0" segment="ch" data="4"/></FE>
+      </for>
     </Rayraw>
 
   </DAQNode>
