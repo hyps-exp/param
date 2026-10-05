@@ -2415,7 +2415,7 @@
       </for>
       <!-- overflow (data=4) -->
       <for var="ch" from="0" to="31">
-        <FE ch="ch" data="4"><D Device="RAYRAWdummy" plane="0" segment="ch" data="4"/></FE>
+        <FE ch="ch" data="4"><D Device="VMEEASIROCdummy" plane="31" segment="ch" data="3"/></FE>
       </for>
     </Rayraw>
 
@@ -2451,7 +2451,7 @@
       </for>
       <!-- overflow (data=4) -->
       <for var="ch" from="0" to="31">
-        <FE ch="ch" data="4"><D Device="RAYRAWdummy" plane="0" segment="ch" data="4"/></FE>
+        <FE ch="ch" data="4"><D Device="VMEEASIROCdummy" plane="31" segment="ch" data="3"/></FE>
       </for>
     </Rayraw>
 
