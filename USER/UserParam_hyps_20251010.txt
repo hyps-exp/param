@@ -181,6 +181,8 @@ StofOffset	1.500
 ### SdcInSdcOutTracking
 MinLayerSdcInSdcOut 9
 
+### LEPS TOF SEGMENT (for DCAnalyzer)
+LEPSTOFSEG 0 1 2 8 9 39 46 47 //0 origin
 
 ### CFTTracking
 MinLayerCFTPhi 3
